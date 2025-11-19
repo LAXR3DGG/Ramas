@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas Francesas Clásicas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Configuración global de la fuente y estilos base */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        /* Estilos personalizados para los iconos SVG (una flor de lis simple) */
+        .fleur-de-lis {
+            fill: #c20000; /* Un rojo borgoña */
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-red': '#c20000',
+                        'secondary-gold': '#ffd700',
+                        'bg-light': '#fefefe',
+                        'card-bg': '#ffffff',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen p-4 sm:p-8">
+
+    <header class="text-center mb-10 p-6 bg-primary-red text-white rounded-xl shadow-lg">
+        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-2">
+            La Cuisine Française
+        </h1>
+        <p class="text-lg sm:text-xl font-light">
+            Seis Recetas Clásicas de la Gastronomía Francesa
+        </p>
+    </header>
+
+    <main class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="bg-card-bg p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-primary-red">
+                <h2 class="text-2xl font-semibold mb-3 text-primary-red flex items-center">
+                    <svg class="fleur-de-lis" viewBox="0 0 512 512">
+                        <path d="M416 352c-8.1 0-16.2-2.1-23.8-6.1l-102.3-54c-12.8-6.8-27.7-6.8-40.5 0l-102.3 54c-7.6 4-15.7 6.1-23.8 6.1C85.1 352 64 330.9 64 304v-96c0-26.9 21.1-48 48-48h288c26.9 0 48 21.1 48 48v96c0 26.9-21.1 48-48 48zm-288-96h256c8.8 0 16 7.2 16 16v96c0 8.8-7.2 16-16 16H128c-8.8 0-16-7.2-16-16v-96c0-8.8 7.2-16 16-16zM256 64c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zM256 160c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zM96 160c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zM416 160c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zM480 320c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zM32 320c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32z"/>
+                    </svg>
+                    Ratatouille
+                </h2>
+                <img src="https://via.placeholder.com/400x250?text=Imagen+de+Ratatouille" alt="Un plato de Ratatouille fresco y colorido" class="w-full h-auto rounded-md mb-4 object-cover">
+                <p class="text-sm italic mb-4 text-gray-600">
+                    Un guiso tradicional de verduras del sur de Francia, cocinado a fuego lento.
+                </p>
+                <h3 class="font-bold mb-2 text-lg">Ingredientes clave:</h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Berenjena y Calabacín</li>
+                    <li>Tomates, Cebolla y Ajo</li>
+                    <li>Pimientos (rojo y amarillo)</li>
+                    <li>Hierbas provenzales</li>
+                    <li>Aceite de oliva</li>
+                </ul>
+            </div>
+
+            <div class="bg-card-bg p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-primary-red">
+                <h2 class="text-2xl font-semibold mb-3 text-primary-red flex items-center">
+                    <svg class="fleur-de-lis" viewBox="0 0 512 512">
+                        <path d="M416 352c-8.1 0-16.2-2.1-23.8-6.1l-102.3-54c-12.8-6.8-27.7-6.8-40.5 0l-102.3 54c-7.6 4-15.7 6.1-23.8 6.1C85.1 352 64 330.9 64 304v-96c0-26.9 21.1-48 48-48h288c26.9 0 48 21.1 48 48v96c0 26.9-21.1 48-48 48zm-288-96h256c8.8 0 16 7.2 16 16v96c0 8.8-7.2 16-16 16H128c-8.8 0-16-7.2-16-16v-96c0-8.8 7.2-16 16-16zM256 64c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zM256 160c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zM96 160c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zM416 160c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zM480 320c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zM32 320c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32z"/>
+                    </svg>
+                    Crème brûlée
+                </h2>
+                <img src="https://via.placeholder.com/400x250?text=Imagen+de+Creme+Brulee" alt="Un postre de Crème brûlée con su capa de azúcar crujiente" class="w-full h-auto rounded-md mb-4 object-cover">
+                <p class="text-sm italic mb-4 text-gray-600">
+                    Un postre de natillas con vainilla, cubierto con una capa de azúcar caramelizada y crujiente.
+                </p>
+                <h3 class="font-bold mb-2 text-lg">Ingredientes clave:</h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Yemas de huevo</li>
+                    <li>Nata espesa (crema de leche)</li>
+                    <li>Azúcar</li>
+                    <li>Extracto de vainilla o vaina</li>
+                </ul>
+            </div>
+
+            <div class="bg-card-bg p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-primary-red">
+                <h2 class="text-2xl font-semibold mb-3 text-primary-red flex items-center">
+                    <svg class="fleur-de-lis" viewBox="0 0 512 512">
+                        <path d="M416 352c-8.1 0-16.2-2.1-23.8-6.1l-102.3-54c-12.8-6.8-27.7-6.8-40.5 0l-102.3 54c-7.6 4-15.7 6.1-23.8 6.1C85.1 352 64 330.9 64 304v-96c0-26.9 21.1-48 48-48h288c26.9 0 48 21.1 48 48v96c0 26.9-21.1 48-48 48zm-288-96h256c8.8 0 16 7.2 16 16v96c0 8.8-7.2 16-16 16H128c-8.8 0-16-7.2-16-16v-96c0-8.8 7.2-16 16-16zM256 64c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zM256 160c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zM96 160c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zM416 160c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zM480 320c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zM32 320c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32z"/>
+                    </svg>
+                    Croissant
+                </h2>
+                <img src="https://via.placeholder.com/400x250?text=Imagen+de+Croissant" alt="Un Croissant dorado y hojaldrado" class="w-full h-auto rounded-md mb-4 object-cover">
+                <p class="text-sm italic mb-4 text-gray-600">
+                    Un panecillo de hojaldre, mantecoso y en forma de media luna. ¡El desayuno francés por excelencia!
+                </p>
+                <h3 class="font-bold mb-2 text-lg">Ingredientes clave:</h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Harina y Levadura</li>
+                    <li>Mantequilla (para el hojaldre)</li>
+                    <li>Leche y Azúcar</li>
+                    <li>Huevo (para pintar)</li>
+                </ul>
+            </div>
+
+            <div class="bg-card-bg p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-primary-red">
+                <h2 class="text-2xl font-semibold mb-3 text-primary-red flex items-center">
+                    <svg class="fleur-de-lis" viewBox="0 0 512 512">
+                        <path d="M416 352c-8.1 0-16.2-2.1-23.8-6.1l-102.3-54c-12.8-6.8-27.7-6.8-40.5 0l-102.3 54c-7.6 4-15.7 6.1-23.8 6.1C85.1 352 64 330.9 64 304v-96c0-26.9 21.1-48 48-48h288c26.9 0 48 21.1 48 48v96c0 26.9-21.1 48-48 48zm-288-96h256c8.8 0 16 7.2 16 16v96c0 8.8-7.2 16-16 16H128c-8.8 0-16-7.2-16-16v-96c0-8.8 7.2-16 16-16zM256 64c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zM256 160c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zM96 160c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zM416 160c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zM480 320c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zM32 320c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32z"/>
+                    </svg>
+                    Boeuf Bourguignon
+                </h2>
+                <img src="https://via.placeholder.com/400x250?text=Imagen+de+Boeuf+Bourguignon" alt="Estofado de carne en salsa oscura con champiñones" class="w-full h-auto rounded-md mb-4 object-cover">
+                <p class="text-sm italic mb-4 text-gray-600">
+                    Un estofado francés de carne de res cocinado lentamente en vino tinto de Borgoña con champiñones.
+                </p>
+                <h3 class="font-bold mb-2 text-lg">Ingredientes clave:</h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Carne de res (para estofado)</li>
+                    <li>Vino tinto (Borgoña)</li>
+                    <li>Tocino (lardon)</li>
+                    <li>Cebollas y Champiñones</li>
+                    <li>Caldo de res</li>
+                </ul>
+            </div>
+
+            <div class="bg-card-bg p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-primary-red">
+                <h2 class="text-2xl font-semibold mb-3 text-primary-red flex items-center">
+                    <svg class="fleur-de-lis" viewBox="0 0 512 512">
+                        <path d="M416 352c-8.1 0-16.2-2.1-23.8-6.1l-102.3-54c-12.8-6.8-27.7-6.8-40.5 0l-102.3 54c-7.6 4-15.7 6.1-23.8 6.1C85.1 352 64 330.9 64 304v-96c0-26.9 21.1-48 48-48h288c26.9 0 48 21.1 48 48v96c0 26.9-21.1 48-48 48zm-288-96h256c8.8 0 16 7.2 16 16v96c0 8.8-7.2 16-16 16H128c-8.8 0-16-7.2-16-16v-96c0-8.8 7.2-16 16-16zM256 64c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zM256 160c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zM96 160c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zM416 160c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zM480 320c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zM32 320c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32z"/>
+                    </svg>
+                    Soupe à l'oignon Gratinée
+                </h2>
+                <img src="https://via.placeholder.com/400x250?text=Imagen+de+Sopa+de+Cebolla" alt="Tazón de sopa de cebolla con queso derretido y gratinado" class="w-full h-auto rounded-md mb-4 object-cover">
+                <p class="text-sm italic mb-4 text-gray-600">
+                    Sopa de cebolla caramelizada, cubierta con un trozo de pan tostado y una generosa capa de queso gratinado.
+                </p>
+                <h3 class="font-bold mb-2 text-lg">Ingredientes clave:</h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Cebollas (caramelizadas)</li>
+                    <li>Caldo de res o pollo</li>
+                    <li>Vino blanco seco</li>
+                    <li>Pan (baguette tostada)</li>
+                    <li>Queso (Gruyère o Emmental)</li>
+                </ul>
+            </div>
+
+            <div class="bg-card-bg p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-primary-red md:col-span-2 lg:col-span-1">
+                <h2 class="text-2xl font-semibold mb-3 text-primary-red flex items-center">
+                    <svg class="fleur-de-lis" viewBox="0 0 512 512">
+                        <path d="M416 352c-8.1 0-16.2-2.1-23.8-6.1l-102.3-54c-12.8-6.8-27.7-6.8-40.5 0l-102.3 54c-7.6 4-15.7 6.1-23.8 6.1C85.1 352 64 330.9 64 304v-96c0-26.9 21.1-48 48-48h288c26.9 0 48 21.1 48 48v96c0 26.9-21.1 48-48 48zm-288-96h256c8.8 0 16 7.2 16 16v96c0 8.8-7.2 16-16 16H128c-8.8 0-16-7.2-16-16v-96c0-8.8 7.2-16 16-16zM256 64c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zM256 160c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zM96 160c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zM416 160c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zM480 320c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32zM32 320c-17.7 0-32 14.3-32 32s14.3 32 32 32s32-14.3 32-32s-14.3-32-32-32z"/>
+                    </svg>
+                    Tarte Tatin
+                </h2>
+                <img src="https://via.placeholder.com/400x250?text=Imagen+de+Tarte+Tatin" alt="Tarta de manzana caramelizada invertida" class="w-full h-auto rounded-md mb-4 object-cover">
+                <p class="text-sm italic mb-4 text-gray-600">
+                    La famosa tarta de manzana al revés, donde las manzanas se caramelizan en mantequilla y azúcar antes de hornearse.
+                </p>
+                <h3 class="font-bold mb-2 text-lg">Ingredientes clave:</h3>
+                <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Manzanas (preferiblemente Granny Smith)</li>
+                    <li>Mantequilla</li>
+                    <li>Azúcar (para el caramelo)</li>
+                    <li>Masa de hojaldre</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt-12 p-6 bg-secondary-gold bg-opacity-10 rounded-xl border-l-4 border-secondary-gold text-gray-700">
+            <h3 class="text-xl font-semibold mb-2">¡Bon Appétit!</h3>
+            <p>
+                La cocina francesa es conocida por su refinamiento y el uso de ingredientes frescos. Estas recetas son un excelente punto de partida para explorar la gastronomía de Francia.
+            </p>
+        </div>
+    </main>
+
+    <footer class="text-center mt-10 p-4 text-gray-500 text-sm">
+        <p>&copy; 2025 Recetas Clásicas Francesas. Vive la France!</p>
+    </footer>
+
+</body>
+</html>
